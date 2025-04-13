@@ -1,5 +1,4 @@
 def add(folder, num1, num2, output):
-    import FaaSr_py
     num3 = num1 + num2
     with open("output.txt", 'w') as f:
         f.write(str(num3))
