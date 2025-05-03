@@ -1,6 +1,6 @@
 def add(folder, num1, num2, output):
     num3 = num1 + num2
-    with open("/tmp/output.txt", 'w') as f:
+    with open("output.txt", 'w') as f:
         f.write(str(num3))
     try:
         FaaSr_py.faasr_put_file(local_file="/tmp/output.txt", remote_folder=folder, remote_file=output)   
