@@ -1,2 +1,2 @@
 def rank_test():
-    print(FaaSr_py.faasr_rank()
+    print(FaaSr_py.faasr_rank())
