@@ -1,5 +1,3 @@
-import requests
-
 def add(folder, num1, num2, output):
     num3 = num1 + num2
     with open("/tmp/output.txt", 'w') as f:
