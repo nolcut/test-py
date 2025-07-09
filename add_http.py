@@ -3,7 +3,6 @@ def add(folder, num1, num2, output):
     with open("/tmp/output.txt", 'w') as f:
         f.write(str(num3))
     try:
-        local_file="/tmp/output.txt", remote_folder=folder, remote_file=output
         request_json = {
             "ProcedureID": "faasr_put_file",
             "Arguments": {"local_file": "/tmp/output.txt",
