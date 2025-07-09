@@ -1,4 +1,4 @@
-def add(folder, num1, num2, output):
+def add_rpc(folder, num1, num2, output):
     num3 = num1 + num2
     with open("/tmp/output.txt", 'w') as f:
         f.write(str(num3))
