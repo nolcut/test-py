@@ -3,7 +3,7 @@ def add_rpc(folder, num1, num2, output):
     with open("/tmp/output.txt", 'w') as f:
         f.write(str(num3))
     try:
-        faasr_put_file(local_file="/tmp/output.txt", remote_folder="folder", remote_file="output")
+        faasr_put_file(local_file="/tmp/output.txt", remote_folder=folder, remote_file=output)
     except Exception as e:
         print(f"Exception with faasr_put_file: {str(e)}")
     print(f"add: {num1} + {num2} = {num3}")
