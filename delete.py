@@ -3,4 +3,5 @@ def print_and_delete(folder, filename):
     with open(f"/tmp/{filename}", 'r') as f:
         print(f"downloaded content: {f.readline()}")
     faasr_delete_file(remote_file=filename, remote_folder=folder)
-    print("file deleted")
+    print("file deleted -- returning True")
+    return True
